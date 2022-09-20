@@ -61,7 +61,7 @@ public class BaseClass {
 
 			else if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("chromeDriver");
-				System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
+// 				System.setProperty("webdriver.chrome.driver", path + "\\drivers\\chromedriver.exe");
 				ChromeOptions options = new ChromeOptions();
 				options.setHeadless(true); //Set Chrome option
 				driver = new ChromeDriver(options);
