@@ -39,5 +39,6 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
 
 }
