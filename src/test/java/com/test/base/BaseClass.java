@@ -95,6 +95,18 @@ public class BaseClass {
 			}
 
 		}
+		
+		if (browser.equalsIgnoreCase("chrome")) {
+				System.out.println("chromeDriver");
+				System.setProperty("webdriver.chrome.driver", ".chromedriver/bin/chromedriver");
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless");
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-gpu");
+				options.addArguments("--remote-debugging-port=9222");
+				options.setBinary(".apt/opt/google/chrome/chrome");
+				driver = new ChromeDriver(options);
+			}
 
 		driver.manage().window().maximize();
 		initializeNetworkListener(browser);
