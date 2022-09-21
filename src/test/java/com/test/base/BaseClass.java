@@ -95,7 +95,7 @@ public class BaseClass {
 			}
 
 		}
-		
+		else if (os.equalsIgnoreCase("linux")) {
 		if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("chromeDriver");
 				System.setProperty("webdriver.chrome.driver", ".chromedriver/bin/chromedriver");
@@ -107,6 +107,7 @@ public class BaseClass {
 				options.setBinary(".apt/opt/google/chrome/chrome");
 				driver = new ChromeDriver(options);
 			}
+		}
 
 		driver.manage().window().maximize();
 		initializeNetworkListener(browser);
