@@ -7,8 +7,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-import com.joseph.base.BaseClass;
-import com.joseph.utility.EmailNotification;
+import com.test.base.BaseClass;
+import com.test.utility.EmailNotification;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
